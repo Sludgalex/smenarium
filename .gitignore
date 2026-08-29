@@ -1,0 +1,42 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Build / release artifacts
+build/
+dist/
+release/
+*.exe
+*.msi
+*.tar.gz
+*.zip
+*.sha256
+
+# User-owned SMENARIUM runtime data
+/data.json
+/data.json.*
+!/defaults/data.json
+/backups/
+/exports/
+/attachments/
+/logs/
+/_updates/
+/.last_port
+/anonymous_error_reporting.json
+/private_error_reports/
+
+# Backups / temporary files
+*.bak
+*.tmp
+*.corrupt_*.bak
+~$*
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
