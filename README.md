@@ -7,7 +7,7 @@
 
 ## Быстрые ссылки
 
-**[🌐 Официальный сайт](https://armrukovoditel.ru/)** · **[🧪 Онлайн-демо](https://demo.armrukovoditel.ru/)** · **[⬇ Скачать для Windows x64](https://github.com/Sludgalex/smenarium/releases/download/v0.2.42/SMENARIUM_v0242.exe)**
+**[🌐 Официальный сайт](https://armrukovoditel.ru/)** · **[🧪 Онлайн-демо](https://demo.armrukovoditel.ru/)** · **[💬 Telegram](https://t.me/arm_rukovoditel)** · **[⬇ Скачать для Windows x64](https://github.com/Sludgalex/smenarium/releases/download/v0.2.42/SMENARIUM_v0242.exe)**
 
 ## Скачать для Windows
 
@@ -27,8 +27,8 @@ SHA-256 файла `SMENARIUM_v0242.exe`:
 
 - Официальный сайт: https://armrukovoditel.ru/
 - Онлайн-демо: https://demo.armrukovoditel.ru/
+- Telegram: https://t.me/arm_rukovoditel
 - GitHub Releases: https://github.com/Sludgalex/smenarium/releases
-- Telegram-канал: https://t.me/arm_rukovoditel
 - MAX: https://max.ru/channel_arm_rukovoditel
 - Поддержать проект: https://boosty.to/sludg/donate
 
