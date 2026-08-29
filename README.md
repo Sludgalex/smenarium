@@ -5,12 +5,25 @@
 **Текущая версия:** 0.2.42 · **дата релиза:** 29.08.2026  
 **Автор:** Орлов Александр Николаевич
 
+## Скачать для Windows
+
+**[Скачать СМЕНАРИУМ v0.2.42](https://github.com/Sludgalex/smenarium/releases/tag/v0.2.42)**
+
+Готовая Windows x64-сборка публикуется в разделе **Assets** релиза.
+
+SHA-256 файла `SMENARIUM_v0242.exe`:
+
+```text
+4c8055db3e67daa14121d9a24db83fa811b958738339a07dda83ef44b574eb71
+```
+
 > СМЕНАРИУМ использует браузер как локальный интерфейс. Приложение запускает HTTP-сервер только на `127.0.0.1`, поэтому рабочий интерфейс открывается в браузере, но это не делает программу облачной или сетевой. Основные рабочие данные хранятся локально на компьютере пользователя.
 
 ## Ссылки
 
 - Сайт проекта: https://armrukovoditel.ru/
 - Демо: https://demo.armrukovoditel.ru/
+- GitHub Releases: https://github.com/Sludgalex/smenarium/releases
 - Telegram-канал: https://t.me/arm_rukovoditel
 - MAX: https://max.ru/channel_arm_rukovoditel
 - Поддержать проект: https://boosty.to/sludg/donate
