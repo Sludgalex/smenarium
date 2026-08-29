@@ -7,9 +7,9 @@
 
 ## Скачать для Windows
 
-**[Скачать СМЕНАРИУМ v0.2.42](https://github.com/Sludgalex/smenarium/releases/tag/v0.2.42)**
+**[⬇ Скачать СМЕНАРИУМ v0.2.42 для Windows x64](https://github.com/Sludgalex/smenarium/releases/download/v0.2.42/SMENARIUM_v0242.exe)**
 
-Готовая Windows x64-сборка публикуется в разделе **Assets** релиза.
+Прямая ссылка загружает готовый `SMENARIUM_v0242.exe`. Страница релиза: [v0.2.42](https://github.com/Sludgalex/smenarium/releases/tag/v0.2.42).
 
 SHA-256 файла `SMENARIUM_v0242.exe`:
 
