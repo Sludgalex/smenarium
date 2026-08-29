@@ -5,6 +5,10 @@
 **Текущая версия:** 0.2.42 · **дата релиза:** 29.08.2026  
 **Автор:** Орлов Александр Николаевич
 
+## Быстрые ссылки
+
+**[🌐 Официальный сайт](https://armrukovoditel.ru/)** · **[🧪 Онлайн-демо](https://demo.armrukovoditel.ru/)** · **[⬇ Скачать для Windows x64](https://github.com/Sludgalex/smenarium/releases/download/v0.2.42/SMENARIUM_v0242.exe)**
+
 ## Скачать для Windows
 
 **[⬇ Скачать СМЕНАРИУМ v0.2.42 для Windows x64](https://github.com/Sludgalex/smenarium/releases/download/v0.2.42/SMENARIUM_v0242.exe)**
@@ -21,8 +25,8 @@ SHA-256 файла `SMENARIUM_v0242.exe`:
 
 ## Ссылки
 
-- Сайт проекта: https://armrukovoditel.ru/
-- Демо: https://demo.armrukovoditel.ru/
+- Официальный сайт: https://armrukovoditel.ru/
+- Онлайн-демо: https://demo.armrukovoditel.ru/
 - GitHub Releases: https://github.com/Sludgalex/smenarium/releases
 - Telegram-канал: https://t.me/arm_rukovoditel
 - MAX: https://max.ru/channel_arm_rukovoditel
