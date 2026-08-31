@@ -1,0 +1,45 @@
+СМЕНАРИУМ 0.2.47 — отчёт проверки
+==================================
+
+Цель релиза
+------------
+Исправить Windows-сценарий: обновление найдено и скачано, приложение закрывается, но новый EXE не запускается/после ручного запуска остаётся старая версия.
+
+Выявленный риск в 0.2.46
+------------------------
+- основной процесс запускал постоянный optimizer-daemon из того же SMENARIUM.exe;
+- перед обновлением _request_interactive_exit() не завершал optimizer-daemon явно;
+- PowerShell helper ожидал только PID основного процесса и затем делал однократную замену EXE;
+- при временной блокировке EXE дочерним процессом/антивирусом замена могла не состояться или уйти в rollback.
+
+Исправления 0.2.47
+------------------
+- optimizer-daemon закрывается с ожиданием завершения, terminate/kill fallback;
+- после ответа интерфейсу relaunch/update/rollback завершают старый PID через os._exit после остановки server/UI;
+- updater запускается detached, с CREATE_BREAKAWAY_FROM_JOB при возможности;
+- updater завершает оставшиеся процессы, использующие тот же canonical EXE;
+- ожидание освобождения EXE до 45 секунд;
+- повторные попытки копирования/замены до 60 секунд;
+- SHA-256 временного и уже установленного EXE;
+- обязательный startup-marker новой версии;
+- rollback при отсутствии startup-marker;
+- last_update_result.json и расширенный update_apply.log;
+- canonical target C:/SMENARIUM/SMENARIUM.exe;
+- одноразовый внешний repair_update_windows.ps1 для перехода со старого updater.
+
+Выполненные проверки в текущей среде
+------------------------------------
+PASS — python py_compile app.py/update_manager.py/tools/publish_update.py.
+PASS — JavaScript web/index.html: node --check.
+PASS — полный встроенный app.py --self-test (все тесты, ИТОГ: ПРОЙДЕН).
+PASS — локальный HTTP /api/health сообщает 0.2.47 и web_available=true.
+PASS — /api/release-info сообщает 0.2.47 и новые release notes.
+PASS — тест _stop_optimizer_daemon: дочерний процесс действительно завершён и wait подтверждён.
+PASS — генерация реального one-file PowerShell helper; статически проверено наличие Stop-LingeringTargetProcesses, Wait-TargetReleased, Copy-WithRetry, двойной SHA-256, startup-marker, rollback и result file.
+PASS — CLI --update-helper-check доступен; на Linux корректно помечает PowerShell parse как skipped.
+
+Windows-ограничение среды
+-------------------------
+Реальная замена запущенного Windows EXE и Schannel/WebView2 не могут быть физически выполнены в этой Linux-среде. Поэтому build_exe_windows.bat 0.2.47 теперь ОБЯЗАТЕЛЬНО запускает Windows PowerShell Parser для сгенерированного updater helper и repair_update_windows.ps1 уже на Windows до выдачи релиза.
+
+Для первого перехода со старого updater необходимо использовать REPAIR_UPDATE_WINDOWS.bat после сборки 0.2.47.
