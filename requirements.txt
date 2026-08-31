@@ -7,5 +7,11 @@ Pillow>=10.0
 
 openpyxl>=3.1
 
-# Semi-automatic updater for public MEGA folders (Python 3.11+).
-async-mega-py==2.4.1; python_version >= "3.11"
+# v0.2.46+ updater uses verified HTTPS + Windows system trust + certifi CA bundle + SHA-256.
+# No third-party cloud SDK is required for updates.
+
+# Native desktop shell (WebView2 on Windows; browser fallback remains available).
+pywebview==6.2.1
+
+# TLS trust bundle for updater; Windows system trust is merged at runtime.
+certifi>=2024.8.30
